@@ -1,1 +1,1 @@
-console.log("Whazzzuppp");
+import "./styles.css";
