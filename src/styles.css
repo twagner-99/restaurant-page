@@ -2,12 +2,16 @@
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+body {
+    min-height: 100vh;
+}
+
 #content {
     display: grid;
     grid-template-columns: 1fr auto;
 }
 
 #burger-img {
-    height: 80vh;
-    width: auto;
+    max-height: 80vh;
+    width: auto;    
 }
