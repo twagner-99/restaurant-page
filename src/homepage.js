@@ -1,6 +1,8 @@
 import burgerImg from './images/burger.jpg';
 
 const createHomepage = function() {
+    location.reload();
+    
     const content = document.querySelector('#content');
     
     const restaurantInfo = document.createElement('div');
