@@ -1,7 +1,9 @@
 const createMenuPage = function () {
-    location.reload();
-
     const content = document.querySelector('#content');
+    
+    while (content.lastChild) {
+        content.removeChild(content.lastChild);
+    }
 
     const menuHeading = document.createElement('h1');
     menuHeading.textContent = "Menu";

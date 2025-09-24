@@ -1,7 +1,9 @@
 const createAboutPage = function() {
-    location.reload();
-
     const content = document.querySelector('#content');
+    
+    while (content.lastChild) {
+        content.removeChild(content.lastChild);
+    }
 
     const aboutHeading = document.createElement('h1');
     aboutHeading.textContent = 'About';

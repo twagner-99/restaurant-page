@@ -1,10 +1,12 @@
 import burgerImg from './images/burger.jpg';
 
 const createHomepage = function() {
-    location.reload();
-    
     const content = document.querySelector('#content');
     
+    while (content.lastChild) {
+        content.removeChild(content.lastChild);
+    }
+
     const restaurantInfo = document.createElement('div');
     restaurantInfo.id = 'restaurant-info';
     
