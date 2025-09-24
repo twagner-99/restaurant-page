@@ -2,7 +2,8 @@ import burgerImg from './images/burger.jpg';
 
 const createHomepage = function() {
     const content = document.querySelector('#content');
-    
+    content.classList.add('grid');
+
     while (content.lastChild) {
         content.removeChild(content.lastChild);
     }

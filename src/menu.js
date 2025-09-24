@@ -1,5 +1,6 @@
 const createMenuPage = function () {
     const content = document.querySelector('#content');
+    content.classList.remove('grid');
     
     while (content.lastChild) {
         content.removeChild(content.lastChild);
